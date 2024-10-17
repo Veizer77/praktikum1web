@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operasi Penjumlahan</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: rgb(255, 255, 255);
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: white;
+            padding: 10px;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px;
+
+        }
+    </style>
+</head>
+<body>
+    <h2>Penjumlahan Dua Angka</h2>
+
+    <form id="sumForm">
+        <label for="num1">Angka 1:</label>
+        <input type="number" id="num1" required><br><br>
+
+        <label for="num2">Angka 2:</label>
+        <input type="number" id="num2" required><br><br>
+
+        <button type="button" onclick="calculateSum()">Jumlahkan</button>
+    </form>
+
+    <h3>Hasil: <span id="result"></span></h3>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
