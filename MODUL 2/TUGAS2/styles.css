@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.todo-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.todo-input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 75%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #667eea;
+    border-radius: 10px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-color: #764ba2;
+    box-shadow: 0 0 5px rgba(118, 75, 162, 0.5);
+}
+
+button {
+    padding: 12px;
+    font-size: 16px;
+    background-color: #667eea;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #764ba2;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f4f4f4;
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+li:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-3px);
+}
+
+li span {
+    flex: 1;
+    text-align: left;
+    font-size: 16px;
+    color: #333;
+}
+
+li div {
+    display: flex;
+    gap: 10px;
+}
+
+li button {
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+li button:first-child {
+    background-color: #00aaff;
+    color: white;
+}
+
+li button:first-child:hover {
+    background-color: #0077cc;
+}
+
+li button:last-child {
+    background-color: red;
+    color: white;
+}
+
+li button:last-child:hover {
+    background-color: darkred;
+}
